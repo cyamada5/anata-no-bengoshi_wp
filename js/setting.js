@@ -6,7 +6,7 @@ particlesJS('hoge',{
           "value":5, //シェイプの数
           "density":{
             "enable":true, //シェイプの密集度を変更するか否か
-            "value_area":50 //シェイプの密集度
+            "value_area":100 //シェイプの密集度
           }
         },
         "shape":{
