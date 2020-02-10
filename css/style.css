@@ -1,0 +1,196 @@
+html{
+  font-family: "筑紫A丸ゴシック", "FOT-筑紫A丸ゴシック Std E", TsukuARdGothicStd-E, "游ゴシック", YuGothic, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, sans-serif ;
+  font: Bold ;
+  color: #3B3538;
+
+  position: relative;
+  /* background-color: #F6F670;
+  background-image: -webkit-gradient(linear, 0 0, 100% 100%,color-stop(.25, #F9F9F9), color-stop(.25, transparent),color-stop(.5, transparent), color-stop(.5, #F9F9F9),color-stop(.75, #F9F9F9), color-stop(.75, transparent),to(transparent));
+  -webkit-background-size: 14px 14px; */
+  
+}
+ol, ul{
+  list-style: none;
+}
+a{
+  color: #3B3538;
+  text-decoration: none;
+}
+a:hover{
+  text-decoration: none;
+}
+
+h1{
+  text-align: center;
+}
+
+/*---------------nav---------------------*/
+nav{
+  top: 0px;
+  width: 15vh;
+  height: 100vh;
+  font-size: 17px;
+  font-weight: bold;
+  background: #FFFFFF;
+  box-shadow: 0px 10px 10px #7A7F82; 
+  /* border: 1px solid #2CAEBF; */
+  position: fixed;
+}
+nav img{
+  width: 11vh;
+  /* height: 20vh; */
+}
+nav i{
+  font-size: 3em
+}
+nav li + li {
+  border-top: none;
+}
+.main-nav_item{
+  width: 15vh;
+  height: 15vh;
+  background: #FFFFFF;
+  /* border: 1px solid #2CAEBF;  */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.main-nav_item:nth-of-type(1){
+  height: 20vh;
+  background-color: #2CAEBF;
+}
+.main-nav_item:hover{
+  color: #F2F8FA;
+  background: #2CAEBF 0% 0% no-repeat padding-box;
+  transition: all  0.3s ease;
+}
+
+/*---------------header---------------------*/
+header{
+  position: absolute;
+  top: 10px;
+  right: 2vw;
+  font-size: 20px;
+  letter-spacing: -0.35px;
+  line-height: 16px;
+}
+header ul{
+  text-align: right;
+} 
+header li{
+  display: inline;
+  margin-left: 5px;
+} 
+
+/*---------------main--------------------*/
+
+#hoge{
+  width:100vw;
+  height: 100vh;
+  margin:0 auto; 
+  background-color:#F2F8FA;
+  z-index: -10;
+  position: relative;
+}
+.main-visual{
+  margin-top: 8vh;
+  position: absolute;
+  left: 31%;
+
+}
+main div,p{
+  text-align: center;
+}
+main img{
+  width: 40vw;
+  margin-top: 5%;
+}
+main p{
+  margin-top: 25px;
+  font-size: 20px;
+  line-height: 30px;
+  letter-spacing: -0.6px;
+  color: #7A7F82;
+}
+
+/*---------------map---------------------*/
+.map-area{
+  /* margin-top: 12vh; */
+  background-color: #F2F8FA;
+  background-image: -webkit-gradient(linear, 0 0, 100% 100%,color-stop(.25, #FFFFFF), color-stop(.25, transparent),color-stop(.5, transparent), color-stop(.5, #FFFFFF),color-stop(.75, #FFFFFF), color-stop(.75, transparent),to(transparent));
+  -webkit-background-size: 40px 40px;
+}
+
+.st0{
+  fill:#5CA3AB;
+}
+.map{
+  width: 50vw;
+  left: 20vw;
+}
+
+
+
+/*---------------category---------------------*/
+/* .category-area{
+  margin-top: 12vh;
+  background-color: #FF96CC;
+  background-image: -webkit-gradient(linear, 0 0, 100% 100%,color-stop(.25, #FFFFFF), color-stop(.25, transparent),color-stop(.5, transparent), color-stop(.5, #FFFFFF),color-stop(.75, #FFFFFF), color-stop(.75, transparent),to(transparent));
+  -webkit-background-size: 20px 20px;
+} */
+.category-area h1{
+  font-size: 30px;
+}
+
+.category-area li{
+  text-align: center;
+}
+
+
+
+
+
+
+
+
+/*---------------footer---------------------*/
+footer{
+  background-color: #2CAEBF;
+  text-align: center;
+  color: #3B3538;
+}
+footer img{
+  width: 9%;
+  padding-top: 15px;
+}
+footer h3{
+  font-size: 20px;
+  padding: 10px;
+}
+footer h4{
+  font-size: 14px;
+  letter-spacing: -0.35px;
+  line-height: 16px;
+}
+footer ul{
+  text-align: right;
+  padding: 15px;
+}
+footer li{
+  font-size: 14px;
+  display: inline;
+}
+
+
+
+
+/*
+nav hoverしても文字色変わらない 
+nav ホバー したとき色がきっちり収まらない。謎の余白がある
+  header 横並びにならない
+clinic アイコン表示されない
+particle 画像にできない
+particle 重なりがうまくできない
+particle 重ねたら中央寄せができない
+なんかフォントがおかしい
+*/
