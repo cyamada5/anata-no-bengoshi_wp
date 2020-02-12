@@ -122,28 +122,40 @@ main p{
 }
 
 .st0{
-  fill:#5CA3AB;
+  fill:#2CAEBF;
 }
 .map{
   width: 50vw;
   left: 20vw;
 }
+.map-area h3,li{
+  text-align: center;
+}
 
+.map a:hover path {
+  stroke: #F6F670;
+  stroke-width: 70;
+  /* fill:#F6F670; */
+  transition: all  0.3s ease;
+}
 
 
 /*---------------category---------------------*/
-/* .category-area{
-  margin-top: 12vh;
-  background-color: #FF96CC;
-  background-image: -webkit-gradient(linear, 0 0, 100% 100%,color-stop(.25, #FFFFFF), color-stop(.25, transparent),color-stop(.5, transparent), color-stop(.5, #FFFFFF),color-stop(.75, #FFFFFF), color-stop(.75, transparent),to(transparent));
-  -webkit-background-size: 20px 20px;
-} */
+.category-area{
+  /* margin-top: 12vh; */
+  background-color: #F2F8FA;
+  /* background-image: -webkit-gradient(linear, 0 0, 100% 100%,color-stop(.25, #FFFFFF), color-stop(.25, transparent),color-stop(.5, transparent), color-stop(.5, #FFFFFF),color-stop(.75, #FFFFFF), color-stop(.75, transparent),to(transparent));
+  -webkit-background-size: 20px 20px; */
+}
 .category-area h1{
   font-size: 30px;
 }
 
 .category-area li{
+  height: 10vh;
   text-align: center;
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  box-shadow: 0px 3px 6px #00000029;
 }
 
 
