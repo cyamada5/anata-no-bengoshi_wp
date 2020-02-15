@@ -1,66 +1,119 @@
-let app = new Vue({  //vueインスタンス生成
-    el: '#app',　//id="app"が属性として使用されているタグ内で使える。(マウント)
-    data: {
-        comment: "",
-        rate: 0,
-        comments: [],
-        sun: 0,
-        length: false,  //使いたい変数達
-
-    },
-    methods: {  //各メソッドを格納。htmlを見てもらえると「v-on:click="メソッド名"」と記述されているところが複数箇所ありますが要素をクリックした際に下記のメソッドを実行するという意味です。
-        submit: function () {
-            if (this.comment == "") return;
-            if (this.comment.length > 100) return;
-            let commentItem = {
-                comment: this.comment,
-                rate: this.rate
-            }
-            this.comments.unshift(commentItem);
-            this.sun = this.sun + Number(commentItem.rate)
-            this.comment = ""
-            this.rate = 0
-            if (this.comments.length > 0) {
-                this.length = true
-            }
-        },
-        deleteItem: function (index) {
-            this.sun = this.sun - Number(this.comments[index].rate);
-            this.comments.splice(index, 1);
-            if (this.comments.length < 1) {
-                this.length = false
-            }
-        },
-        sortUp:function(){
-            let arr =  this.comments;
-            arr.sort(function(a,b){
-                if (a.rate > b.rate) return 1;
-                if (a.rate < b.rate) return -1;
-                return 0;
-            })
-            this.comments = arr;
-        },
-        sort:function(){
-            let arr =  this.comments;
-            arr.sort(function(a,b){
-                if (a.rate > b.rate) return -1;
-                if (a.rate < b.rate) return 1;
-                return 0;
-            })
-            this.comments = arr;
-        },
-
-
-
-    },
-    computed:{  //算出プロパティと言います。変数averageScoreをhtml側で呼び出すと
-//自動的に関数内の処理を実行してくれます。他にも監視プロパティというものもありますが監視プロパティに比べて
-//処理結果をキャッシュしてくれるというのが大きな特徴です。
-        averageScore:function(){
-            return (this.sun/this.comments.length).toFixed(2)
-        }
-
-    }
-
+$(function(){
+    // 北海道
+    $('.hokkaido,#hokkaidoPath').on('mouseover',function(){
+        $('#hokkaidoPath').css({
+            'fill':'#F6F670',
+            'transition':'all  0.3s ease',
+        });
+    });
+    $('.hokkaido,#hokkaidoPath').on('mouseout',function(){
+        $('#hokkaidoPath').css({
+            'fill':'#2CAEBF',
+            'transition':'all  0.3s ease',
+        });
+    });
+    // 東北
+    $('.tohoku,#tohokuPath').on('mouseover',function(){
+        $('#tohokuPath').css({
+            'fill':'#F6F670',
+            'transition':'all  0.3s ease',
+        });
+    });
+    $('.tohoku,#tohokuPath').on('mouseout',function(){
+        $('#tohokuPath').css({
+            'fill':'#2CAEBF',
+            'transition':'all  0.3s ease',
+        });
+    });
+    // 関東
+    $('.kantou,#kantouPath').on('mouseover',function(){
+        $('#kantouPath').css({
+            'fill':'#F6F670',
+            'transition':'all  0.3s ease',
+        });
+    });
+    $('.kantou,#kantouPath').on('mouseout',function(){
+        $('#kantouPath').css({
+            'fill':'#2CAEBF',
+            'transition':'all  0.3s ease',
+        });
+    });
+    // 北陸・甲信越
+    $('.hokuriku-kousinnetsu,#hokuriku-kousinnetsuPath').on('mouseover',function(){
+        $('#hokuriku-kousinnetsuPath').css({
+            'fill':'#F6F670',
+            'transition':'all  0.3s ease',
+        });
+    });
+    $('.hokuriku-kousinnetsu,#hokuriku-kousinnetsuPath').on('mouseout',function(){
+        $('#hokuriku-kousinnetsuPath').css({
+            'fill':'#2CAEBF',
+            'transition':'all  0.3s ease',
+        });
+    });
+    // 東海
+    $('.tokai,#tokaiPath').on('mouseover',function(){
+        $('#tokaiPath').css({
+            'fill':'#F6F670',
+            'transition':'all  0.3s ease',
+        });
+    });
+    $('.tokai,#tokaiPath').on('mouseout',function(){
+        $('#tokaiPath').css({
+            'fill':'#2CAEBF',
+            'transition':'all  0.3s ease',
+        });
+    });
+    // 関西
+    $('.kansai,#kansaiPath').on('mouseover',function(){
+        $('#kansaiPath').css({
+            'fill':'#F6F670',
+            'transition':'all  0.3s ease',
+        });
+    });
+    $('.kansai,#kansaiPath').on('mouseout',function(){
+        $('#kansaiPath').css({
+            'fill':'#2CAEBF',
+            'transition':'all  0.3s ease',
+        });
+    });
+    // 中国
+    $('.tyugoku,#tyubuPath').on('mouseover',function(){
+        $('#tyubuPath').css({
+            'fill':'#F6F670',
+            'transition':'all  0.3s ease',
+        });
+    });
+    $('.tyugoku,#tyubuPath').on('mouseout',function(){
+        $('#tyubuPath').css({
+            'fill':'#2CAEBF',
+            'transition':'all  0.3s ease',
+        });
+    });
+    // 四国
+    $('.shikoku,#shikokuPath').on('mouseover',function(){
+        $('#shikokuPath').css({
+            'fill':'#F6F670',
+            'transition':'all  0.3s ease',
+        });
+    });
+    $('.shikoku,#shikokuPath').on('mouseout',function(){
+        $('#shikokuPath').css({
+            'fill':'#2CAEBF',
+            'transition':'all  0.3s ease',
+        });
+    });
+    // 九州・沖縄
+    $('.kyusyu-okinawa,#kyusyu-okinawaPath').on('mouseover',function(){
+        $('#kyusyu-okinawaPath').css({
+            'fill':'#F6F670',
+            'transition':'all  0.3s ease',
+        });
+    });
+    $('.kyusyu-okinawa,#kyusyu-okinawaPath').on('mouseout',function(){
+        $('#kyusyu-okinawaPath').css({
+            'fill':'#2CAEBF',
+            'transition':'all  0.3s ease',
+        });
+    });
 });
-

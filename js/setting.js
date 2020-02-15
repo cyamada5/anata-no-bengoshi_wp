@@ -6,11 +6,11 @@ particlesJS('hoge',{
           "value":10, //シェイプの数
           "density":{
             "enable":true, //シェイプの密集度を変更するか否か
-            "value_area":500 //シェイプの密集度
+            "value_area":700 //シェイプの密集度
           }
         },
         "shape":{
-          "type":"polygon", //シェイプの形（circle:丸、edge:四角、triangle:三角、polygon:多角形、star:星型、image:画像）
+          "type":"image", //シェイプの形（circle:丸、edge:四角、triangle:三角、polygon:多角形、star:星型、image:画像）
           "stroke":{
             "width":0, //シェイプの外線の太さ
             "color":"#ffcc00" //シェイプの外線の色
@@ -21,31 +21,31 @@ particlesJS('hoge',{
           },
           //typeをimageにした時の設定
           "image": {
-            "src": "../img/fukidashi.png",
+            "src": "img/fukidashi.png",
             "width": 100,
-            "height": 100
+            "height": 63
           }
         },
         "color":{
-          "value":"#B9DFE4" //シェイプの色
+          "value":"#DCEFF2" //シェイプの色
         },
         "opacity":{
-          "value":0.3, //シェイプの透明度
+          "value":0.9, //シェイプの透明度
           "random":true, //シェイプの透明度をランダムにするか否か
           "anim":{
             "enable":false, //シェイプの透明度をアニメーションさせるか否か
             "speed":10, //アニメーションのスピード
-            "opacity_min":0.1, //透明度の最小値
+            "opacity_min":0.3, //透明度の最小値
             "sync":false //全てのシェイプを同時にアニメーションさせるか否か
           }
         },
         "size":{
-          "value":50, //シェイプの大きさ
+          "value":100, //シェイプの大きさ
           "random":true, //シェイプの大きさをランダムにするか否か
           "anim":{
             "enable":true, //シェイプの大きさをアニメーションさせるか否か
             "speed":10, //アニメーションのスピード
-            "size_min":0.1, //大きさの最小値
+            "size_min":0.3, //大きさの最小値
             "sync":false //全てのシェイプを同時にアニメーションさせるか否か
           }
         },
@@ -79,14 +79,14 @@ particlesJS('hoge',{
   //--マウスオーバー時の処理----------
           "onhover":{
             "enable":true, //マウスオーバーが有効か否か
-            "mode":"repulse" //マウスオーバー時に発動する動き(下記modes内のgrab、repulse、bubbleより選択)
+            "mode":"bubble" //マウスオーバー時に発動する動き(下記modes内のgrab、repulse、bubbleより選択)
           },
   //--------------------
   
   //--クリック時の処理----------
           "onclick":{
             "enable":true, //クリックが有効か否か
-            "mode":"push" //クリック時に発動する動き(下記modes内のgrab、repulse、bubble、push、removeより選択)
+            "mode":"repulse" //クリック時に発動する動き(下記modes内のgrab、repulse、bubble、push、removeより選択)
           },
   //--------------------
   
