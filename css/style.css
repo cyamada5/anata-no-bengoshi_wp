@@ -222,11 +222,13 @@ main p{
   display: flex;
   align-items: center;
   justify-content: center;
+  display: block;
+
 }
 
 .category-area li{
   left: 15vw;
-  height: 10vh;
+  height: 10vw;
   width: 10vw;
   text-align: center;
   background: #FFFFFF 0% 0% no-repeat padding-box;
