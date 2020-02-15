@@ -104,14 +104,14 @@ $(function(){
         });
     });
     // 九州・沖縄
-    $('.kyusyu-okinawa,#kyusyu-okinawaPath').on('mouseover',function(){
-        $('#kyusyu-okinawaPath').css({
+    $('.kyusyu-okinawa,.kyusyu-okinawaPath').on('mouseover',function(){
+        $('.kyusyu-okinawaPath').css({
             'fill':'#F6F670',
             'transition':'all  0.3s ease',
         });
     });
-    $('.kyusyu-okinawa,#kyusyu-okinawaPath').on('mouseout',function(){
-        $('#kyusyu-okinawaPath').css({
+    $('.kyusyu-okinawa,.kyusyu-okinawaPath').on('mouseout',function(){
+        $('.kyusyu-okinawaPath').css({
             'fill':'#2CAEBF',
             'transition':'all  0.3s ease',
         });
