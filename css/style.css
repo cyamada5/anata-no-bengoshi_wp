@@ -18,13 +18,30 @@ ol, ul{
 a{
   color: #3B3538;
   text-decoration: none;
+  font-family: ot-tsukuardgothic-std,fot-tsukuardgothic-std,"Tsukushi A Round Gothic","筑紫A丸ゴシック","游ゴシック", YuGothic, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, sans-serif ;
+  font: Bold ;
+  font-weight: 400;
+  font-style: normal;
 }
 a:hover{
   text-decoration: none;
 }
 
+
+/*---------------subtitle小見出し---------------------*/
+.subtitle{
+  background-color: #FFFFFF;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
 h1{
   text-align: center;
+  font-size: 3em;
+  font-weight: 700;
+}
+.subtitle img{
+  zoom: 0.5;
 }
 
 /*---------------nav---------------------*/
@@ -32,12 +49,16 @@ nav{
   top: 0px;
   width: 15vh;
   height: 100vh;
-  font-size: 17px;
-  font-weight: 800;
+  /* font-size: 17px;
+  font-weight: 800; */
   background: #FFFFFF;
   box-shadow: 0px 10px 10px #7A7F82; 
   /* border: 1px solid #2CAEBF; */
   position: fixed;
+}
+nav p{
+  font-size: 17px;
+  font-weight: 800;
 }
 nav img{
   width: 11vh;
@@ -97,6 +118,9 @@ header li{
   display: inline;
   margin-left: 5px;
 } 
+header i :nth-last-of-type(2){
+  color: #2CAEBF;
+}
 
 /*---------------main--------------------*/
 
@@ -150,11 +174,12 @@ main p{
   background-color: #F2F8FA;
   background-image: -webkit-gradient(linear, 0 0, 100% 100%,color-stop(.25, #FFFFFF), color-stop(.25, transparent),color-stop(.5, transparent), color-stop(.5, #FFFFFF),color-stop(.75, #FFFFFF), color-stop(.75, transparent),to(transparent));
   -webkit-background-size: 40px 40px;
+  height: 100vh;
 }
 
 .prefecture{
   position: relative;
-  height: 100vh;
+
   display: flex;
   justify-content: center;
   align-items: center;
@@ -219,27 +244,47 @@ main p{
   font-size: 30px;
 } */
 .category-area ul{
-  display: flex;
+  /* display: flex;
   align-items: center;
   justify-content: center;
-  display: block;
-
+  display: block; */
+  margin-left: 20vw;
+  margin-right: 20vw;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .category-area li{
-  left: 15vw;
+  left: 10vw;
+  right: 10vw;
   height: 10vw;
   width: 10vw;
   text-align: center;
   background: #FFFFFF 0% 0% no-repeat padding-box;
   box-shadow: 0px 3px 6px #00000029;
-  font-size: 20px;
-
+  font-size: 20px; 
+  margin: 3vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
+.category-area li:nth-last-of-type(1),
+.category-area li:nth-last-of-type(2) {
+  visibility: hidden;
+}
+.category-area i{
+  font-size: 2em;
+  padding-bottom: 8px;
+}
 
-
-
+.category-area li:hover{
+  box-shadow: 0px 0px 0px #F6F670;
+  box-sizing: border-box;
+  border: solid 2px #F6F670;
+  transition: all  0.1s ease;
+}
 
 
 /*---------------footer---------------------*/
