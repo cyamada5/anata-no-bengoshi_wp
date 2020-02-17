@@ -1,3 +1,24 @@
+.marker-animation.active{
+  background-position: -100% .5em;
+}
+
+.marker-animation {
+  background-image: -webkit-linear-gradient(left, transparent 50%,#F6F670 50%);
+  background-image: -moz-linear-gradient(left, transparent 50%, #F6F670 50%);
+  background-image: -ms-linear-gradient(left, transparent 50%, #F6F670 50%);
+  background-image: -o-linear-gradient(left, transparent 50%, #F6F670 50%);
+  background-image: linear-gradient(left, transparent 50%, #F6F670 50%);
+  background-repeat: repeat-x;
+  background-size: 200% .8em;
+  background-position: 0 .5em;
+  transition: all 2s ease-in-out;
+  font-weight: bold;
+}
+
+
+
+
+
 html{
   /* font-family: "筑紫A丸ゴシック", "FOT-筑紫A丸ゴシック Std E", TsukuARdGothicStd-E, "游ゴシック", YuGothic, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, sans-serif ; */
   font-family: ot-tsukuardgothic-std,fot-tsukuardgothic-std,"Tsukushi A Round Gothic","筑紫A丸ゴシック","游ゴシック", YuGothic, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, sans-serif ;
@@ -39,6 +60,9 @@ h1{
   text-align: center;
   font-size: 3em;
   font-weight: 700;
+  padding-bottom: 5vh;
+  padding-right: 3vw;
+  padding-left: 3vw;
 }
 .subtitle img{
   zoom: 0.5;
@@ -163,6 +187,7 @@ main img{
 main p{
   margin-top: 25px;
   font-size: 20px;
+  font-weight: 400;
   line-height: 30px;
   letter-spacing: -0.6px;
   color: #7A7F82;
@@ -191,44 +216,77 @@ main p{
 .map-area h3{
   font-size: 20px;
   font-weight: 700;
+  padding-bottom: 1vh;
+  color: #2CAEBF;
 }
 .map-area li{
   font-size: 15px;
+  padding: 4px;
+  display: inline;
+  background-image: linear-gradient(180deg, transparent 90%, #F6F670 0);
+  background-repeat: no-repeat;
+  background-size: 0% 100%;
+  transition: 0.5s;
+}
+.map-area li:hover{
+  opacity: 0.7;
+  transition: 0.5s;
+  background-size: 100% 100%;
 }
 .map{
   width: 70vw;
-  /* position: absolute;
-  left: 0;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  margin: auto; */
   transform: translateX(-63px);
 }
 
-.map svg {
-  /* position: absolute;
-  left: 0;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  margin: auto; */
 
-}
 
 .region {
   position: absolute;
-
+  width: 8vw;
+  height: 8vh; 
+}
+.region ul{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: left;
 }
 .hokkaido{
-  left: 70vw;
+  top: 15vh;
+  left: 67vw;
 }
 .tohoku{
-  /* position: absolute; */
-  top: 10vh;
-  left: 70vw;
-
+  top: 30vh;
+  left: 67vw;
 }
+.kantou{
+  top: 50vh;
+  left: 67vw;
+}
+.hokuriku-kousinnetsu{
+  top: 15vh;
+  left: 40vw;
+}
+.tokai{
+  top: 70vh;
+  left: 60vw;
+}
+.kansai{
+  top: 70vh;
+  left: 45vw;
+}
+.tyugoku{
+  top: 30vh;
+  left: 30vw;
+}
+.shikoku{
+  top: 70vh;
+  left: 30vw;
+}
+.kyusyu-okinawa{
+  top: 45vh;
+  left: 17vw;
+}
+
 
 
 
@@ -237,12 +295,11 @@ main p{
 .category-area{
   /* margin-top: 12vh; */
   background-color: #F2F8FA;
-  /* background-image: -webkit-gradient(linear, 0 0, 100% 100%,color-stop(.25, #FFFFFF), color-stop(.25, transparent),color-stop(.5, transparent), color-stop(.5, #FFFFFF),color-stop(.75, #FFFFFF), color-stop(.75, transparent),to(transparent));
-  -webkit-background-size: 20px 20px; */
+  background-image: -webkit-gradient(linear, 0 0, 100% 100%,color-stop(.25, #FFFFFF), color-stop(.25, transparent),color-stop(.5, transparent), color-stop(.5, #FFFFFF),color-stop(.75, #FFFFFF), color-stop(.75, transparent),to(transparent));
+  -webkit-background-size: 40px 40px;
+  /* height: 100vh; */
 }
-/* .category-area h1{
-  font-size: 30px;
-} */
+
 .category-area ul{
   /* display: flex;
   align-items: center;
@@ -282,7 +339,7 @@ main p{
 .category-area li:hover{
   box-shadow: 0px 0px 0px #F6F670;
   box-sizing: border-box;
-  border: solid 2px #F6F670;
+  border: solid 4px #F6F670;
   transition: all  0.1s ease;
 }
 
