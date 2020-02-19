@@ -123,10 +123,10 @@ $(function(){
 // -------subtitle蛍光ペン
 $(window).scroll(function (){
 	$(".marker-animation").each(function(){
-	  var position = $(this).offset().top; //ページの一番上から要素までの距離を取得
-	  var scroll = $(window).scrollTop(); //スクロールの位置を取得
-	  var windowHeight = $(window).height(); //ウインドウの高さを取得
-	  if (scroll > position - windowHeight){ //スクロール位置が要素の位置を過ぎたとき
+	  var position = $(this).offset().top; //ページの一番上から要素までの距離
+	  var scroll = $(window).scrollTop(); //スクロール位置
+	  var windowHeight = $(window).height(); //ウインドウの高さ
+	  if (scroll >= position - windowHeight){ //スクロール位置>=要素の位置
 	    $(this).addClass('active'); //クラス「active」を与える
 	  }
 	});
