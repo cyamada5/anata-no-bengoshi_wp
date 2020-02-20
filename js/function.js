@@ -131,3 +131,18 @@ $(window).scroll(function (){
 	  }
 	});
 });
+
+
+
+
+$(function (){
+    $("#nav-open").on("click", function () {
+    if ($(this).hasClass("active-menu")) {
+        $(this).removeClass("active-menu");
+        $("#nav-content").removeClass("open").fadeOut(100);
+    } else {
+        $(this).addClass("active-menu");
+        $("#nav-content").fadeIn(100).addClass("open");
+    }
+    });
+});

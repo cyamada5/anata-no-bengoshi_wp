@@ -15,10 +15,6 @@
   font-weight: bold;
 }
 
-
-
-
-
 html{
   /* font-family: "筑紫A丸ゴシック", "FOT-筑紫A丸ゴシック Std E", TsukuARdGothicStd-E, "游ゴシック", YuGothic, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, sans-serif ; */
   font-family: ot-tsukuardgothic-std,fot-tsukuardgothic-std,"Tsukushi A Round Gothic","筑紫A丸ゴシック","游ゴシック", YuGothic, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, sans-serif ;
@@ -61,6 +57,7 @@ button{
   align-items: flex-end;
   border: solid #2CAEBF;
   border-width: 6px 0px 6px 0em;
+  padding-top: 10px;
   /* box-sizing: border-box; */
   /* height: 17vh; */
 }
@@ -81,13 +78,10 @@ button{
 /*---------------nav---------------------*/
 nav{
   top: 0px;
-  width: 15vh;
+  width: 180px;
   height: 100vh;
-  /* font-size: 17px;
-  font-weight: 800; */
   background: #FFFFFF;
   box-shadow: 0px 10px 10px #7A7F82; 
-  /* border: 1px solid #2CAEBF; */
   position: fixed;
 }
 nav p{
@@ -96,7 +90,6 @@ nav p{
 }
 nav img{
   width: 11vh;
-  /* height: 20vh; */
 }
 nav i{
   font-size: 3em
@@ -105,10 +98,9 @@ nav li + li {
   border-top: none;
 }
 .main-nav_item{
-  width: 15vh;
-  height: 15vh;
+  width: 180px;
+  height: 180px;
   background: #FFFFFF;
-  /* border: 1px solid #2CAEBF;  */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -129,10 +121,11 @@ nav li + li {
 .main-nav_item:hover{
   background: #2CAEBF 0% 0% no-repeat padding-box;
   transition: all  0.3s ease;
+  width: 230px;
 }
 /*---------------contents---------------------*/
 .contents{
-  height: 100vh;
+  /* height: 100vh; */
   padding-left: 15vh;
 }
 
@@ -185,14 +178,13 @@ header i :nth-last-of-type(2){
   z-index: 1;
   /* position: absolute; */
   /* left: 31%; */
-
 }
 main div,p{
   text-align: center;
 }
 main img{
-  width: 40vw;
-  margin-top: 5%;
+  width: 60%;
+  /* margin-top: 1%; */
 }
 main p{
   margin-top: 25px;
@@ -205,19 +197,19 @@ main p{
 
 /*---------------map---------------------*/
 .map-area{
-  /* margin-top: 12vh; */
   background-color: #F2F8FA;
   background-image: -webkit-gradient(linear, 0 0, 100% 100%,color-stop(.25, #FFFFFF), color-stop(.25, transparent),color-stop(.5, transparent), color-stop(.5, #FFFFFF),color-stop(.75, #FFFFFF), color-stop(.75, transparent),to(transparent));
   -webkit-background-size: 40px 40px;
-  height: 100vh;
+  padding-bottom: 200px;
 }
 
 .prefecture{
   position: relative;
-
   display: flex;
   justify-content: center;
   align-items: center;
+  padding-bottom: 100px;
+
 }
 .st0{
   fill:#2CAEBF;
@@ -226,12 +218,12 @@ main p{
 .map-area h3{
   font-size: 20px;
   font-weight: 700;
-  padding-bottom: 1vh;
+  padding-bottom: 10px;
   color: #2CAEBF;
 }
 .map-area li{
-  font-size: 15px;
-  padding: 4px;
+  font-size: 17px;
+  padding: 6px;
   display: inline;
   background-image: linear-gradient(180deg, transparent 80%, #F6F670 0);
   background-repeat: no-repeat;
@@ -247,12 +239,10 @@ main p{
   transform: translateX(-63px);
 }
 
-
-
 .region {
   position: absolute;
-  width: 8vw;
-  height: 8vh; 
+  width: 160px;
+  height: 100px; 
 }
 .region ul{
   display: flex;
@@ -276,11 +266,11 @@ main p{
   left: 40vw;
 }
 .tokai{
-  top: 70vh;
+  bottom: 35px;
   left: 60vw;
 }
 .kansai{
-  top: 70vh;
+  bottom: 35px;
   left: 45vw;
 }
 .tyugoku{
@@ -288,7 +278,7 @@ main p{
   left: 30vw;
 }
 .shikoku{
-  top: 70vh;
+  bottom: 35px;
   left: 30vw;
 }
 .kyusyu-okinawa{
@@ -302,11 +292,11 @@ main p{
 
 /*---------------category---------------------*/
 .category-area{
-  /* margin-top: 12vh; */
+
   background-color: #F2F8FA;
   background-image: -webkit-gradient(linear, 0 0, 100% 100%,color-stop(.25, #FFFFFF), color-stop(.25, transparent),color-stop(.5, transparent), color-stop(.5, #FFFFFF),color-stop(.75, #FFFFFF), color-stop(.75, transparent),to(transparent));
   -webkit-background-size: 40px 40px;
-  height: 100vh;
+  padding-bottom: 50px;
 }
 
 .category-area ul{
@@ -314,9 +304,9 @@ main p{
   align-items: center;
   justify-content: center;
   display: block; */
-  margin-top: 8vh;
-  margin-left: 20vw;
-  margin-right: 20vw;
+  margin-top: 50px;
+  margin-left: 10vw;
+  margin-right: 10vw;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -325,8 +315,8 @@ main p{
 .category-area li{
   left: 8vw;
   right: 8vw;
-  height: 8vw;
-  width: 8vw;
+  height: 200px;
+  width: 200px;
   text-align: center;
   background: #FFFFFF 0% 0% no-repeat padding-box;
   box-shadow: 0px 3px 6px #00000029;
@@ -355,9 +345,9 @@ main p{
 
 
 /*---------------review.html---------------------*/
-.review-area{
+/* .review-area{
   width: 85vw;
-}
+} */
 
 .review-area label{
 
@@ -368,17 +358,34 @@ main p{
   margin: 3vh;
   margin-left: 30vw;
 }
-.review-area p{
+/* .review-area p{
   font-weight: 500;
   margin: 1vh;
-}
+} */
 
 .review-section{
   display: flex;
-  margin-left: 35vw;
-  margin-bottom: 5vh;
+  /* margin-left: 35vw; */
+  /* margin-bottom: 20px; */
+  width: 50vw;
+  margin: 0 auto;
 }
-
+.review-section .review-label,
+.review-section p{
+  width: 20%;
+  text-align: left;
+}
+.review-section input,
+.review-section textarea,
+.review-section .other-group{
+  width: 80%;
+}
+.review-section li input{
+  width: 20%;
+}
+.review-section li label{
+  width: 80%;
+}
 .review-area input,.review-area textarea,.review-area option{
   /* vertical-align: bottom; */
   border: 2px solid #2CAEBF;
@@ -386,7 +393,7 @@ main p{
 .review-item{
   left: 50vw;
 }
-.caution{
+.review-section span{
   font-size: 1px;
   color: #FF0000;
 }
@@ -453,38 +460,301 @@ footer{
   background-color: #2CAEBF;
   text-align: center;
   color: #F2F8FA;
+  display: flex;
+  align-items: center;
+  padding: 30px 0px;
 }
 footer img{
-  width: 9%;
+  width: 20%;
   padding-top: 15px;
 }
 footer h3{
   font-size: 20px;
   padding: 10px;
 }
-footer h4{
+/* footer h4{
   font-size: 14px;
   letter-spacing: -0.35px;
   line-height: 16px;
-}
+} */
 footer ul{
-  text-align: right;
+  text-align: center;
   padding: 15px;
 }
 footer li{
   font-size: 14px;
   display: inline;
 }
-
-
+.footer-items{
+  width: 50%;
+}
+.footer-logo{
+  width: 50%;
+}
 
 
 /*
-
-
 検索ページフォントオーサム表示されない
 入力必須のフォントサイズ小さくならない
 レビュー欄テキストエリアとか揃わない
 レビュー欄名付け方どうしよう
 結果ページどうかけばいいの？
 */
+
+
+/*---------------レスポンシブ---------------------*/
+
+/*------------レスポンシブ 地図崩れるところ---------------*/
+
+@media(max-width: 1678px){
+  /* 地図 */
+  .map{
+    width: 1100px;
+    transform: translateX(-63px);
+  }
+  .map-area{
+    padding-bottom: 400px;
+  }
+  .prefecture{
+    padding-bottom: 250px;
+  }
+  .region {
+    position: absolute;
+    width: 15vw;  
+    height: 50px;   
+  }
+  .hokkaido{
+    top: 60vh;
+    left: 12vw;
+  }
+  .tohoku{
+    top: 60vh;
+    left: 27vw;
+  }
+  .kantou{
+    top: 60vh;
+    left: 42vw;
+  }
+  .hokuriku-kousinnetsu{
+    top: 60vh;
+    left: 57vw;
+  }
+  .tokai{
+    top: 80vh;
+    left: 7vw;
+  }
+  .kansai{
+    top: 80vh;
+    left: 22vw;
+  }
+  .tyugoku{
+    top: 80vh;
+    left: 37vw;
+  }
+  .shikoku{
+    top: 80vh;
+    left: 52vw;
+  }
+  .kyusyu-okinawa{
+    top: 80vh;
+    left: 67vw;
+  }
+}
+
+/*------------レスポンシブ タブレット---------------*/
+
+
+@media(max-width: 959px){
+  .contents{
+    padding-left: 0;
+  }
+
+
+  /* nav */
+  nav{
+    top: 0px;
+    width: 100vw;
+    height: 120px;
+    background: #FFFFFF;
+    box-shadow: 0px 10px 10px #7A7F82; 
+    position: fixed;
+    z-index: 10000;
+  }
+  nav p{
+    font-size: 10px;
+    font-weight: 800;
+  }
+  nav img{
+    width: 10vw;
+  }
+
+
+  nav i{
+    font-size: 3em
+  }
+  nav li + li {
+    border-top: none;
+  }
+  .main-nav_item{
+    width: 15%;
+    height: 120px;
+    background: #FFFFFF;
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+    display: inline-block;
+    letter-spacing: 0;
+  }
+  .main-nav_item i{
+    /* display: block; */
+    /* margin: 0 auto; */
+    /* margin-bottom: 10px;  */
+  }
+  .main-nav_item:nth-of-type(1){
+    height: 120px;
+    background-color: #2CAEBF;
+    display: flex;
+    /* justify-content: center;
+    align-items: center; */
+  }
+  .main-nav_item:hover a{
+    color: #F2F8FA;
+    transition: all  0.3s ease;
+  }
+  .main-nav_item:hover{
+    background: #2CAEBF 0% 0% no-repeat padding-box;
+    transition: all  0.3s ease;
+
+  }
+  /* 地図 */
+  .map{
+    width: 1900px;
+    transform: translateX(-63px);
+  }
+  .map-area{
+    padding-bottom: 400px;
+  }
+  .prefecture{
+    padding-bottom: 250px;
+  }
+  .region {
+    position: absolute;
+    width: 15vw;  
+    height: 50px;   
+  }
+  .hokkaido{
+    top: 60vh;
+    left: 16vw;
+  }
+  .tohoku{
+    top: 60vh;
+    left: 31vw;
+  }
+  .kantou{
+    top: 60vh;
+    left: 46vw;
+  }
+  .hokuriku-kousinnetsu{
+    top: 60vh;
+    left: 61vw;
+  }
+  .tokai{
+    top: 80vh;
+    left: 11vw;
+  }
+  .kansai{
+    top: 80vh;
+    left: 26vw;
+  }
+  .tyugoku{
+    top: 80vh;
+    left: 41vw;
+  }
+  .shikoku{
+    top: 80vh;
+    left: 56vw;
+  }
+  .kyusyu-okinawa{
+    top: 80vh;
+    left: 71vw;
+  }
+}
+
+
+
+
+  
+}
+
+/*------------レスポンシブ スマホ---------------*/
+
+
+@media(max-width: 480px){
+  .contents{
+    padding-left: 0;
+  }
+  .prefecture-list{
+    display: inline-block;
+  }
+  /* 地図  未完成*/
+  .map{
+    width: 80%;
+    transform: translateX(-63px);
+  }
+  .map-area{
+    padding-bottom: 0px;
+  }
+  .prefecture{
+    padding-bottom: 300px;
+  }
+  .region {
+    position: absolute;
+    width: 15vw;  
+    height: 50px;  
+    margin-bottom: 100px; 
+  }
+  .hokkaido{
+    top: 60vh;
+    left: 16vw;
+  }
+  .tohoku{
+    top: 60vh;
+    left: 31vw;
+  }
+  .kantou{
+    top: 60vh;
+    left: 46vw;
+  }
+  .hokuriku-kousinnetsu{
+    top: 60vh;
+    left: 61vw;
+  }
+  .tokai{
+    top: 80vh;
+    left: 11vw;
+  }
+  .kansai{
+    top: 80vh;
+    left: 26vw;
+  }
+  .tyugoku{
+    top: 80vh;
+    left: 41vw;
+  }
+  .shikoku{
+    top: 80vh;
+    left: 56vw;
+  }
+  .kyusyu-okinawa{
+    top: 80vh;
+    left: 71vw;
+  }
+}
+
+
+
+
+
+
+}
+

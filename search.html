@@ -8,8 +8,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome-animation/0.0.10/font-awesome-animation.css" type="text/css" media="all" />
-    <!-- <link href="https://fonts.googleapis.com/css?family=M+PLUS+1p&display=swap" rel="stylesheet"> -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css?family=M+PLUS+1p&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
     <script>
         (function(d) {
@@ -22,29 +21,17 @@
         })(document);
       </script>
 
-    <title>検索する｜あなたの弁護士</title>
+    <title>あなたの弁護士</title>
 </head>
 <body>
+
 <!-- nav -->
-<nav>
-    <ul class="main-nav-list" id="main-nav">
-        <li class="main-nav_item"><a href="#" class=""><img src="img/logo-notext.png" alt="TOPへ戻る"></i></a></li>
-        <li class="main-nav_item"><a href="#" class=""><i class="fas fa-search fa-fw"></i><p>検索する</p></a></li>
-        <li class="main-nav_item"><a href="#" class=""><i class="fas fa-pencil-alt fa-fw"></i><p>レビューする</p></a></li>
-        <li class="main-nav_item"><a href="#" class=""><i class="fas fa-map-marked-alt fa-fw"></i><p>エリアからさがす</p></a></li>
-        <li class="main-nav_item"><a href="#" class=""><i class="fas fa-folder-open fa-fw"></i><p>カテゴリからさがす</p></a></li>
-    </ul>
-</nav>
-<div class="contents">
-<!-- header -->
-<header>
-    <!-- ▽シェアメニュー -->
-    <ul>
-        <li><i class="fas fa-share-alt"></i> share </li>
-        <li><a href="#" target="_blank"><i class="fab fa-twitter-square faa-shake animated-hover"></i></a></li>
-        <li><a href="#" target="_blank"><i class="fab fa-facebook faa-shake animated-hover"></i></a></li>
-    </ul>
-</header>
+        <nav>
+            <ul class="main-nav-list" id="main-nav">
+                <li class="main-nav_item"><a href="#" class=""><img src="img/logo-notext.png" alt="TOPへ戻る"></i></a></li><li class="main-nav_item"><a href="#" class=""><i class="fas fa-pencil-alt fa-fw"></i><p>レビューする</p></a></li><li class="main-nav_item"><a href="#" class=""><i class="fas fa-search fa-fw"></i><p>ワードでさがす</p></a></li><li class="main-nav_item"><a href="#" class=""><i class="fas fa-map-marked-alt fa-fw"></i><p>エリアからさがす</p></a></li><li class="main-nav_item"><a href="#" class=""><i class="fas fa-folder-open fa-fw"></i><p>カテゴリからさがす</p></a></li>
+            </ul>
+        </nav>
+
 
 
 <!-- ↓検索フォーム -->
@@ -73,15 +60,20 @@
 
 <!-- footer -->
 <footer>
-    <img src="img/logo-notext.png" alt="logo">
-    <h3>あなたの弁護士株式会社</h3>
-    <h4>〒101-0062<br>東京都千代田区神田駿河台4-6 御茶ノ水ソラシティ アカデミア 4F<br>0120-386-810（月曜定休日）</h4>
-    <ul>
-        <li>個人情報保護方針 |</li>
-        <li>ご利用にあたって |</li>
-        <li>サイトマップ |</li>
-        <li>© 2020 Anata no Bengoshi Inc.</li>
-    </ul>
+    <div class="footer-logo">
+        <img src="img/logo-notext.png" alt="logo">
+        <h3>あなたの弁護士株式会社</h3>
+    </div>
+    <!-- <h4>〒101-0062<br>東京都千代田区神田駿河台4-6 御茶ノ水ソラシティ アカデミア 4F<br>0120-386-810（月曜定休日）</h4> -->
+    <div class="footer-items">
+        <ul>
+            <li>個人情報保護方針 |</li>
+            <li>ご利用にあたって |</li>
+            <li>サイトマップ |</li>
+            
+        </ul>
+        <small>© 2020 Anata no Bengoshi Inc.</small>
+    </div>
 </footer>
 </div>
 
@@ -95,16 +87,11 @@
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script src="js/function.js"></script>
-<!-- <?php
-if(isfrontpage())
-{ ?> -->
-
-<!-- <script src="js/particles.min.js"></script>
-<script src="js/setting.js"></script> -->
-
-<!-- <?php } ?> -->
+<script src="js/particles.min.js"></script>
+<script src="js/setting.js"></script>
 
 
 
 </body>
 </html>
+
