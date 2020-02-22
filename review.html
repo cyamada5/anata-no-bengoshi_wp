@@ -1,5 +1,58 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome-animation/0.0.10/font-awesome-animation.css" type="text/css" media="all" />
+    <link href="https://fonts.googleapis.com/css?family=M+PLUS+1p&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <script>
+        (function(d) {
+          var config = {
+            kitId: 'ioz7hml',
+            scriptTimeout: 3000,
+            async: true
+          },
+          h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+        })(document);
+      </script>
 
+    <title>あなたの弁護士</title>
+</head>
+<body>
 
+<!-- nav -->
+    <div class="nav-open">
+        <span></span>
+    </div>
+    <div id="nav-content">
+        <nav>
+            <div class="hamburger-top"></div>
+            <ul class="main-nav-list" id="main-nav">
+                <li class="main-nav_item"><a href="index.html" class=""><img src="img/logo-notext.png" alt="TOPへ戻る"></i></a></li>
+                <li class="main-nav_item"><a href="review.html" class=""><i class="fas fa-pencil-alt fa-fw"></i><p>レビューする</p></a></li>
+
+                <li class="main-nav_item"><a href="search.html" class=""><i class="fas fa-search fa-fw"></i><p>ワードでさがす</p></a></li>
+                <li class="main-nav_item"><a href="index.html#map-area-id" class=""><i class="fas fa-map-marked-alt fa-fw"></i><p>エリアからさがす</p></a></li>
+                <li class="main-nav_item"><a href="index.html#category-area-id" class=""><i class="fas fa-folder-open fa-fw"></i><p>カテゴリからさがす</p></a></li>
+            </ul>
+        </nav>
+    </div>
+    
+<div class="contents">
+<!-- header -->
+    <header>
+        <!-- ▽シェアメニュー -->
+        <ul>
+            <li><i class="fas fa-share-alt"></i></li>
+            <li><a href="#" target="_blank"><i class="fab fa-twitter-square faa-shake animated-hover"></i></a></li>
+            <li><a href="#" target="_blank"><i class="fab fa-facebook faa-shake animated-hover"></i></a></li>
+        </ul>
+    </header>
 <!-- review -->
 
 <article class="review-area">
@@ -14,12 +67,12 @@
 
         <h2>投稿者情報</h2>
             <div class="review-section">
-                <label class="review-label" for="">投稿者名<span>※入力必須</span></label>
+                <label class="review-label" for="">投稿者名<span> ※入力必須</span></label>
                 <input type="text" name="送信時の名前" class="review-item" autofocus required>
             </div>
 
             <div class="review-section">
-                <label class="review-label" for="category-item">依頼内容<span>※入力必須</span></label class="review-label">
+                <label class="review-label" for="category-item">依頼内容<span> ※入力必須</span></label class="review-label">
                 <select name="" id="category-item"  autofocus required>
                     <option value="" selected>カテゴリを選択</option>
                     <option value="離婚">離婚</option>
@@ -37,11 +90,11 @@
 
         <h2>弁護士情報</h2>
             <div class="review-section">
-                <label class="review-label" for="">弁護士氏名<span>※入力必須</span></label class="review-label">
+                <label class="review-label" for="">弁護士氏名<span> ※入力必須</span></label class="review-label">
                 <input type="text" name="弁護士の名前" autofocus required>
             </div>
             <div class="review-section">
-                <label class="review-label" for="pref">都道府県<span>※入力必須</span></label class="review-label">
+                <label class="review-label" for="pref">都道府県<span> ※入力必須</span></label class="review-label">
                 <select name="prefecture" id="pref"  autofocus required>
                     <option value="" selected>都道府県を選択</option>
                     <option value="北海道">北海道</option>
@@ -97,7 +150,7 @@
 
         <h2>評価</h2>
             <div class="review-section">
-                <label class="review-label" for="">総合評価</label class="review-label">
+                <label class="review-label" for="">総合評価<span> ※入力必須</span></label class="review-label">
                 <select name="" id=""  autofocus required>
                     <option value="" selected>評価を選択</option>
                     <option value="1">★</option>
@@ -141,24 +194,10 @@
                         <input type="checkbox" name="other-5" value="休日対応可" id="other-5">
                         <label for="other-5">休日対応可</label>
                     </li>
-
-
-                    <!-- <li>
-                        <label><input type="checkbox" name="other" value="">休日対応可</label>
-                    </li>
-                    <li>
-                        <label><input type="checkbox" name="other" value="">出張対応可</label>
-                    </li>
-                    <li>
-                        <label><input type="checkbox" name="other" value="">カード支払い可</label>
-                    </li> 
-                    <li>
-                        <label><input type="checkbox" name="other" value="">分割払い可</label>
-                    </li>         -->
                 </ul>
             </div>
 
-        <p><input type="submit" name="投稿"></p>
+        <p><input type="submit" name="投稿" class="submit-btn"></p>
     </form>
 
 </article>
@@ -166,7 +205,57 @@
 
 
 
+<!-- footer -->
+<footer>
+    <div class="footer-logo">
+        <img src="img/logo-notext.png" alt="logo">
+        <h3>あなたの弁護士株式会社</h3>
+        <ul class="footer-sns">
+            <li><i class="fas fa-share-alt"></i></li>
+            <li><a href="#" target="_blank"><i class="fab fa-twitter-square faa-shake animated-hover"></i></a></li>
+            <li><a href="#" target="_blank"><i class="fab fa-facebook faa-shake animated-hover"></i></a></li>
+        </ul>
+    </div>
+    <div class="footer-items">
+        <ul>
+            <li>個人情報保護方針 |</li>
+            <li>ご利用にあたって |</li>
+            <li>サイトマップ |</li>
+            
+        </ul>
+        <small>© 2020 Anata no Bengoshi Inc.</small>
+    </div>
+</footer>
+</div>
 
+
+
+
+
+
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="js/function.js"></script>
+<script src="js/particles.min.js"></script>
+<script src="js/setting.js"></script>
+
+
+
+</body>
+</html>
+
+
+<!-- 
+!-- <?php
+if(isfrontpage())
+{ ?> -->
+
+<!-- <script src="js/particles.min.js"></script>
+<script src="js/setting.js"></script> -->
+
+<!-- <?php } ?> -->
 
 
 
