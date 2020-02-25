@@ -25,24 +25,33 @@
 </head>
 <body>
 
-<!-- nav -->
-    <div class="nav-open">
-        <span></span>
-    </div>
-    <div id="nav-content">
-        <nav>
-            <div class="hamburger-top"></div>
-            <ul class="main-nav-list" id="main-nav">
-                <li class="main-nav_item"><a href="index.html" class=""><img src="img/logo-notext.png" alt="TOPへ戻る"></i></a></li>
-                <li class="main-nav_item"><a href="review.html" class=""><i class="fas fa-pencil-alt fa-fw"></i><p>レビューする</p></a></li>
 
-                <li class="main-nav_item"><a href="search.html" class=""><i class="fas fa-search fa-fw"></i><p>ワードでさがす</p></a></li>
-                <li class="main-nav_item"><a href="index.html#map-area-id" class=""><i class="fas fa-map-marked-alt fa-fw"></i><p>エリアからさがす</p></a></li>
-                <li class="main-nav_item"><a href="index.html#category-area-id" class=""><i class="fas fa-folder-open fa-fw"></i><p>カテゴリからさがす</p></a></li>
+
+
+    <div id="nav-content">
+        <nav role="navigation">
+          <div id="menuToggle">
+    
+            <input type="checkbox" />
+    
+            <span></span>
+            <span></span>
+            <span></span>
+            
+      
+            <ul class="main-nav-list" id="main-nav">
+              <li class="main-nav_item"><a href="index.html" class=""><img src="img/logo-notext.png" alt="TOPへ戻る"></i></a></li>
+              <li class="main-nav_item"><a href="review.html" class=""><i class="fas fa-pencil-alt fa-fw"></i><p>レビューする</p></a></li>
+              <li class="main-nav_item"><a href="search.html" class=""><i class="fas fa-search fa-fw"></i><p>ワードでさがす</p></a></li>
+              <li class="main-nav_item"><a href="index.html#map-area-id" class=""><i class="fas fa-map-marked-alt fa-fw"></i><p>エリアからさがす</p></a></li>
+              <li class="main-nav_item"><a href="index.html#category-area-id" class=""><i class="fas fa-folder-open fa-fw"></i><p>カテゴリからさがす</p></a></li>
             </ul>
+          </div>
         </nav>
     </div>
-    
+
+
+
 <div class="contents">
 <!-- header -->
     <header>
@@ -221,9 +230,9 @@
             <li>個人情報保護方針 |</li>
             <li>ご利用にあたって |</li>
             <li>サイトマップ |</li>
-            
+            <li>© 2020 Anata no Bengoshi Inc.</li>
         </ul>
-        <small>© 2020 Anata no Bengoshi Inc.</small>
+        <!-- <small>© 2020 Anata no Bengoshi Inc.</small> -->
     </div>
 </footer>
 </div>
@@ -256,9 +265,3 @@ if(isfrontpage())
 <script src="js/setting.js"></script> -->
 
 <!-- <?php } ?> -->
-
-
-
-
-
-

@@ -1,3 +1,6 @@
+
+
+
 // -------map
 $(function(){
     // 北海道
@@ -145,4 +148,22 @@ $(function (){
         $("#nav-content").fadeIn(100).addClass("open");
     }
     });
+});
+
+// ハンバーガーメニュー
+
+$(function(){
+	$('.navi-trigger').on('click', function(event){
+		event.preventDefault();
+		//stop if nav animation is running 
+		if( !isLateralNavAnimating ) {
+			if($(this).parents('.csstransitions').length > 0 ) isLateralNavAnimating = true; 
+			
+			$('body').toggleClass('navigation-is-open');
+			$('.navigation-wrapper').one('webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend', function(){
+				//animation is over
+				isLateralNavAnimating = false;
+			});
+		}
+	});
 });

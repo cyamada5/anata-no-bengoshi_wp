@@ -88,7 +88,9 @@ nav li p{
   font-size: 12px;
   font-weight: 900;
 }
-
+nav input{
+  display: none;
+}
 nav img{
   width: 11vh;
 }
@@ -503,7 +505,7 @@ footer .footer-sns li{
   margin: 0 16px;
 }
 footer li{
-  font-size: 14px;
+  font-size: 8px;
   margin: 0 5px;
   display: inline;
 }
@@ -594,19 +596,188 @@ footer li{
   .contents{
     padding-left: 0;
   }
+  .main-visual img{
+    width: 50%;
+    min-width: 320px;
+  }
+  .main-visual p{
+    font-size: 14px;
+  }
     /*---------------subtitle小見出し---------------------*/
-    .review-area .subtitle,
+    /* .review-area .subtitle,
     .search-area .subtitle,
     .results-area .subtitle
     {
       margin-top: 120px;
-    }
+    } */
   .subtitle h1{
     font-size: 37px;
   }
 
   /* nav */
+
+
   nav{
+    background: none;
+    box-shadow: none;
+  }
+
+  #menuToggle
+  {
+    display: block;
+    position: relative;
+    top: 25px;
+    left: 25px;
+  /* background-color: #fff; */
+    z-index: 100000;
+    
+    -webkit-user-select: none;
+    user-select: none;
+  }
+
+  #menuToggle a
+  {
+    text-decoration: none;
+    color: #FFFFFF; 
+    transition: color 0.3s ease;
+  }
+
+  #menuToggle a:hover
+  {
+    opacity: 0.5;
+  }
+
+
+  #menuToggle input
+  {
+    display: block;
+    width: 40px;
+    height: 32px;
+    position: absolute;
+    top: -7px;
+    left: -5px;
+    padding: 10px;
+    cursor: pointer;
+    
+    opacity: 0; 
+    z-index: 200000; 
+    -webkit-touch-callout: none;
+  }
+
+
+  #menuToggle span
+  {
+    display: block;
+    width: 33px;
+    height: 4px;
+    margin-bottom: 5px;
+    position: relative;
+    
+    background: #2CAEBF;
+    border-radius: 3px;
+    
+    z-index: 100000;
+    
+    transform-origin: 4px 0px;
+    
+    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+                background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+                opacity 0.55s ease;
+  }
+
+  #menuToggle span:first-child
+  {
+    transform-origin: 0% 0%;
+  }
+
+  #menuToggle span:nth-last-child(2)
+  {
+    transform-origin: 0% 100%;
+  }
+
+
+  #menuToggle input:checked ~ span
+  {
+    opacity: 1;
+    transform: rotate(45deg) translate(-2px, -1px);
+    background: #FFFFFF;
+  }
+
+  #menuToggle input:checked ~ span:nth-last-child(3)
+  {
+    opacity: 0;
+    transform: rotate(0deg) scale(0.2, 0.2);
+  }
+
+  #menuToggle input:checked ~ span:nth-last-child(2)
+  {
+    transform: rotate(-45deg) translate(0, -1px);
+  }
+
+
+  #main-nav
+  {
+    position: absolute;
+    /* width: 300px; */
+    width: 80px;
+    height: 100vh;
+    margin: -100px 0 0 -50px;
+
+
+    padding: 100px;
+    padding-top: 70px;
+    padding-left: 45px;
+    padding-right: 70px;
+    
+    background: #2CAEBF;
+    opacity: 0.9;
+    list-style-type: none;
+    -webkit-font-smoothing: antialiased;
+    
+    transform-origin: 0% 0%;
+    transform: translate(-100%, 0);
+    
+    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+
+  }
+
+  #main-nav li{
+    padding: 3vh 0;
+    font-size: 20px;
+  }
+  #main-nav li:nth-of-type(1){
+    padding: 5px 0 0 0;
+  }
+  #main-nav li:nth-of-type(2){
+    padding-top: 5px;
+  }
+  #main-nav li i
+  {
+    font-size: 1.5em;
+  }
+
+  .main-nav_item{
+    background: none;
+    height: 10vh;
+  }
+
+  .main-nav_item img{
+    width: 80px;
+    padding-top: 20px;
+  }
+  #menuToggle input:checked ~ ul
+  {
+    transform: none;
+  }
+
+
+
+
+
+
+
+
+  /* nav{
     top: 0px;
     width: 100vw;
     height: 120px;
@@ -625,7 +796,6 @@ footer li{
   nav ul{
     display: flex;
   }
-
   nav i{
     font-size: 2.5em
   }
@@ -636,16 +806,11 @@ footer li{
     width: 18%;
     height: 120px;
     background: #FFFFFF;
-    /* display: flex;
-    align-items: center;
-    justify-content: center; */
+
     display: inline-block;
     letter-spacing: 0;
   }
   .main-nav_item i{
-    /* display: block; */
-    /* margin: 0 auto; */
-    /* margin-bottom: 10px;  */
     margin-top: 25px;
 
   }
@@ -653,8 +818,6 @@ footer li{
     height: 120px;
     background-color: #2CAEBF;
     display: flex;
-    /* justify-content: center;
-    align-items: center; */
   }
   .main-nav_item:hover a{
     color: #F2F8FA;
@@ -665,10 +828,19 @@ footer li{
     transition: all  0.3s ease;
     width: 23%;
   }
-
   .main-nav_item:hover{
     width: 18%;
-  }
+  } */
+
+
+
+
+
+
+
+
+
+
 
   /* 地図 */
   .map{
@@ -727,11 +899,53 @@ footer li{
     left: 71vw;
   } 
 
+    /* タブレットサイズ  subtitle*/
+    .subtitle h1{
+      font-size: 25px;
+    }
+    .subtitle img{
+      zoom: 0.25;
+    }
+    /* タブレットサイズ  footer*/
+    .footer-logo img{
+      width: 16%;
+      min-width: 50px;
+    }
+    .footer-logo h3{
+      font-size: 13px;
+    }
+
+     /* タブレットサイズ  レビューする*/
+
+
+
+
+
+
+
+
+
+
+
+
 
 }
 
 /*------------レスポンシブ 都道府県縦並びへ---------------*/
 @media screen and (max-width: 690px){
+
+
+  .main-visual p{
+    font-size: 15px;
+  }
+    /* スマホサイズ  subtitle*/
+    .subtitle h1{
+      font-size: 20px;
+    }
+    .subtitle img{
+      zoom: 0.20;
+    }
+    /* スマホサイズ  map*/
   .prefecture-list{
     display: block;
     position: relative;
@@ -783,20 +997,25 @@ footer li{
   }
 
 
-
 }
 
 
 /*------------レスポンシブ スマホ---------------*/
 
 @media screen and (max-width: 480px){
+  .main-visual img{
+    width: 20%;
+  }
+  .main-visual p{
+    font-size: 11px;
+  }
   .contents{
     padding-left: 0;
   }
 
 
     /* nav */
-    nav{
+    /* nav{
       top: 0px;
       width: 100vw;
       height: 120px;
@@ -826,9 +1045,7 @@ footer li{
       width: 18%;
       height: 120px;
       background: #FFFFFF;
-      /* display: flex;
-      align-items: center;
-      justify-content: center; */
+
       display: inline-block;
       letter-spacing: 0;
     }
@@ -851,7 +1068,7 @@ footer li{
       background: #2CAEBF 0% 0% no-repeat padding-box;
       transition: all  0.3s ease;
       width: 23%;
-    }
+    } */
 
 
 
@@ -876,23 +1093,9 @@ footer li{
     transform: translateX(-35px);
 
   }
-  /* .map-area{
-    padding-bottom: 0px;
+  .footer-items li{
+    font-size: 10px;
   }
-  .map-area ul{
-    padding-bottom: 10px;
-  }
-  .prefecture{
-    padding-bottom: 50px;
-    display: block;
-  }
-  .region {
-    position: static;
-    width: 100%;  
-    height: auto;  
-    margin-top: 15px; 
-  } */
-
 
   /* category-area */
 
@@ -915,6 +1118,11 @@ footer li{
 拡大で表示されるときある
 IDの場所に移動するとき位置が微妙
 min-height 設定して大きくならないように
+
+
+
+ハンバーガーメニューと地図の重なり順
+横幅縮めた時、おかしな影が一瞬通る
 
 ハンバーガーメニューにするSPのやつ
 */
