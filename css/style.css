@@ -352,6 +352,14 @@ main p{
 
 
 /*---------------review.html---------------------*/
+.review-area{
+  background-color: #F2F8FA;
+  background-image: -webkit-gradient(linear, 0 0, 100% 100%,color-stop(.25, #FFFFFF), color-stop(.25, transparent),color-stop(.5, transparent), color-stop(.5, #FFFFFF),color-stop(.75, #FFFFFF), color-stop(.75, transparent),to(transparent));
+  -webkit-background-size: 40px 40px;
+  padding-bottom: 50px;
+}
+
+
 .review-area form{
   font-family: Quicksand, 游ゴシック体, "Yu Gothic", YuGothic, Helvetica, Arial, sans-serif;
 }
@@ -410,9 +418,7 @@ main p{
 
 
 /*---------------search.html---------------------*/
-.search-area{
-  height: 100vh;
-}
+
 .search-area form{
   display: flex;
   justify-content: center;
@@ -459,13 +465,36 @@ main p{
   margin-left: 16px;
 }
 /*---------------results.html---------------------*/
-.results-section{
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.results-area{
+  background-color: #F2F8FA;
+  background-image: -webkit-gradient(linear, 0 0, 100% 100%,color-stop(.25, #FFFFFF), color-stop(.25, transparent),color-stop(.5, transparent), color-stop(.5, #FFFFFF),color-stop(.75, #FFFFFF), color-stop(.75, transparent),to(transparent));
+  -webkit-background-size: 40px 40px;
+  padding-bottom: 50px;
 }
 
 
+.results-section{
+  padding: 30px 20px;
+  margin: 60px 25%;
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  box-shadow: 0px 3px 6px #00000029;
+}
+
+.result-part{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+}
+.result-part h2{
+  font-weight: 900;
+  width: 90px;
+}
+.result-part p{
+  font-size: 14px;
+  width: 270px;
+  text-align: left;
+}
 /*---------------footer---------------------*/
 footer{
   background-color: #2CAEBF;
@@ -582,7 +611,9 @@ footer li{
     left: 70vw;
   }  
 
-
+  .results-section{
+    margin: 60px 25%;
+  }
 
 
 
@@ -610,6 +641,9 @@ footer li{
     {
       margin-top: 120px;
     } */
+  .subtitle{
+    padding-top: 45px;
+  }
   .subtitle h1{
     font-size: 37px;
   }
@@ -921,9 +955,13 @@ footer li{
 
 
 
+     /* タブレットサイズ results*/
 
 
-
+     .results-section{
+      margin: 60px 15%;
+    }
+    
 
 
 
@@ -1099,7 +1137,23 @@ footer li{
 
   /* category-area */
 
+  /* result-area */
 
+  .results-section{
+    margin: 60px 5%;
+  }
+  
+  .result-part h2{
+    font-size: 12px;
+    font-weight: 900;
+    width: 90px;
+  }
+  .result-part p{
+    font-size: 10px;
+
+    width: 270px;
+    text-align: left;
+  }
 
 }
 
