@@ -476,6 +476,7 @@ main p{
 .results-section{
   padding: 30px 20px;
   margin: 60px 25%;
+ 
   background: #FFFFFF 0% 0% no-repeat padding-box;
   box-shadow: 0px 3px 6px #00000029;
 }
@@ -664,7 +665,6 @@ footer li{
     left: 25px;
   /* background-color: #fff; */
     z-index: 100000;
-    
     -webkit-user-select: none;
     user-select: none;
   }
@@ -706,14 +706,10 @@ footer li{
     height: 4px;
     margin-bottom: 5px;
     position: relative;
-    
     background: #2CAEBF;
     border-radius: 3px;
-    
-    z-index: 100000;
-    
-    transform-origin: 4px 0px;
-    
+    z-index: 1000000;
+    transform-origin: 4px 0px;  
     transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
                 background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
                 opacity 0.55s ease;
