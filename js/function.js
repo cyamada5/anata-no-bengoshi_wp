@@ -136,34 +136,31 @@ $(window).scroll(function (){
 });
 
 
-
-
-$(function (){
-    $("#nav-open").on("click", function () {
-    if ($(this).hasClass("active-menu")) {
-        $(this).removeClass("active-menu");
-        $("#nav-content").removeClass("open").fadeOut(100);
-    } else {
-        $(this).addClass("active-menu");
-        $("#nav-content").fadeIn(100).addClass("open");
-    }
-    });
-});
-
 // ハンバーガーメニュー
 
 $(function(){
-	$('.navi-trigger').on('click', function(event){
-		event.preventDefault();
-		//stop if nav animation is running 
-		if( !isLateralNavAnimating ) {
-			if($(this).parents('.csstransitions').length > 0 ) isLateralNavAnimating = true; 
-			
-			$('body').toggleClass('navigation-is-open');
-			$('.navigation-wrapper').one('webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend', function(){
-				//animation is over
-				isLateralNavAnimating = false;
-			});
-		}
-	});
+    $("#menuToggle").on("click", function() {
+
+        if ($('nav').hasClass("close")) {
+            $('nav').addClass("open");
+            $('nav').removeClass("close");
+        }else{
+            $('nav').addClass("close");
+            $('nav').removeClass("open");
+        }
+    });
+});
+
+
+
+
+
+$(function(){
+
+    function prefectureToggle() {
+        $(this).next().slideToggle(300);
+    }
+
+    $(".toggle").click(prefectureToggle);
+
 });
