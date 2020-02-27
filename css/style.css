@@ -229,7 +229,14 @@ main p{
   font-weight: 700;
   padding-bottom: 10px;
   color: #2CAEBF;
+  /* vertical-align: top; */
 }
+.map-area i{
+  padding: 0 8px;
+  font-size: 15px;
+  visibility: hidden;
+}
+
 .map-area li{
   font-size: 14px;
   padding: 6px;
@@ -756,10 +763,10 @@ footer small{
     box-shadow: none;
   }
   nav.close{
-    z-index: 1000;
+    z-index: 0;
   }
   nav.open{
-    z-index: 0;
+    z-index: 1000;
   }
   #menuToggle
   {
@@ -1154,7 +1161,9 @@ footer small{
   }
 
 
-
+  .map-area i{
+    visibility: visible;
+   }
 
 }
 
