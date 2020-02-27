@@ -87,7 +87,7 @@
         <h2>投稿者情報</h2>
             <div class="review-section">
                 <label class="review-label" for="">投稿者名<span> ※入力必須</span></label>
-                <input type="text" name="送信時の名前" class="review-item" autofocus required>
+                <input type="text" name="送信時の名前" class="review-item" placeholder="例) クチコミ君" autofocus required>
             </div>
 
             <div class="review-section">
@@ -110,7 +110,7 @@
         <h2>弁護士情報</h2>
             <div class="review-section">
                 <label class="review-label" for="">弁護士氏名<span> ※入力必須</span></label class="review-label">
-                <input type="text" name="弁護士の名前" autofocus required>
+                <input type="text" name="弁護士の名前" placeholder="例) 佐藤太郎" autofocus required>
             </div>
             <div class="review-section">
                 <label class="review-label" for="pref">都道府県<span> ※入力必須</span></label class="review-label">
@@ -180,12 +180,16 @@
                 </select>
             </div>
             <div class="review-section">
-                <label class="review-label" for="">コメント</label class="review-label">
-                <textarea name="" id="" cols="50" rows="10"></textarea>
+                <label class="review-label" for="" >クチコミのタイトル<span> ※入力必須</span></label class="review-label" >
+                <textarea name="" id="" cols="50" rows="1" placeholder="例) こちらの疑問に優しく答えてくれた" autofocus required></textarea>
+            </div>
+            <div class="review-section">
+                <label class="review-label" for="">詳細コメント</label class="review-label">
+                <textarea name="" id="" cols="50" rows="10" placeholder="ご自由にお書きください"></textarea>
             </div>
             <div class="review-section">
                 <label class="review-label" for="">費用</label class="review-label">
-                <input type="text" name="費用">
+                <input type="text" name="費用" placeholder="例) １５０万円＋実費">
             </div>  
 
 
@@ -198,21 +202,38 @@
                         <label for="other-1">夜間対応可</label>
                     </li>
                     <li>
-                        <input type="checkbox" name="other-2" value="出張対応可" id="other-2">
-                        <label for="other-2">出張対応可</label>
+                        <input type="checkbox" name="other-2" value="休日対応可" id="other-2">
+                        <label for="other-2">休日対応可</label>
                     </li>
                     <li>
-                        <input type="checkbox" name="other-3" value="カード支払い可" id="other-3">
-                        <label for="other-3">カード支払い可</label>
+                        <input type="checkbox" name="other-3" value="出張対応可" id="other-3">
+                        <label for="other-3">出張対応可</label>
                     </li>
                     <li>
-                        <input type="checkbox" name="other-4" value="分割払い可" id="other-4">
-                        <label for="other-4">分割払い可</label>
+                        <input type="checkbox" name="other-4" value="カード支払い可" id="other-4">
+                        <label for="other-4">カード支払い可</label>
                     </li>
                     <li>
-                        <input type="checkbox" name="other-5" value="休日対応可" id="other-5">
-                        <label for="other-5">休日対応可</label>
+                        <input type="checkbox" name="other-5" value="分割払い可" id="other-5">
+                        <label for="other-5">分割払い可</label>
                     </li>
+                    <li>
+                        <input type="checkbox" name="other-6" value="後払い可" id="other-6">
+                        <label for="other-6">後払い可</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" name="other-7" value="女性弁護士" id="other-7">
+                        <label for="other-7">女性弁護士</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" name="other-8" value="男性弁護士" id="other-8">
+                        <label for="other-8">男性弁護士</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" name="other-9" value="初回相談無料" id="other-9">
+                        <label for="other-9">初回相談無料</label>
+                    </li>
+
                 </ul>
             </div>
 
