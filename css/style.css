@@ -1207,13 +1207,41 @@ footer small{
     /* font-size: 10px;
     color: #FF0000; */
   }
-  
+  .star-part p{
+    font-size: 13px;
+  }
   
   .submit-btn{
     display: block;
     margin: 0 auto;
   }
-  
+
+
+  /* スマホ＋αサイズ  result*/
+  .results-section .main-result-part{
+    padding: 5px 10px;
+  }
+  .results-section .comment {
+    margin: 20px 0 30px 0;
+  }
+  .results-area h4{
+    font-size: 8px;
+  }
+  .results-section h1{
+    font-size: 22px;
+  }
+  .results-section h1 span,
+  .results-section .comment h3{
+    font-size: 16px;
+  }
+  .results-section .comment p,
+  .results-section .price p{
+    font-size: 13px;
+  }
+
+  .results-section .tag p{
+    font-size: 12px;
+  }
 }
 
 
