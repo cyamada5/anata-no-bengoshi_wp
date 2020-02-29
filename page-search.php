@@ -22,7 +22,7 @@
             <div class="search-ranking-part">           
                 <i class="fas fa-crown"></i>
                 <p>1位</p>
-                <a href="results.html">女性弁護士</a>
+                <a href="<?php echo esc_url(home_url()); ?>/results">女性弁護士</a>
             </div>
             <div class="search-ranking-part">
                 <i class="fas fa-crown"></i>
