@@ -428,9 +428,8 @@ main p{
   color: #FF0000;
 }
 
-
-.submit-btn{
-  margin: 100px;
+.review-area input.submit-btn{
+  /* margin: 100px; */
   width: 100px;
   height: 50px;
   display: block;
@@ -1153,9 +1152,9 @@ footer small{
     margin: 10px auto;
   }
   .review-section select{
-    width: 70%;
+    width: 30%;
     display: block;
-    margin: 10px auto;
+    margin: 10px 15%;
   }
 
   .review-section .other-group li{
@@ -1165,30 +1164,12 @@ footer small{
 
   .review-section li input{
     width: 10%;
- 
   }
   .review-section li label{
     width: 90%;
     margin-right: 30px;
- 
   }
-  .review-area input,.review-area textarea,.review-area option{
-    /* border: 1px solid #2CAEBF;
-    border-radius: 3px; */
-  }
-  .other-group li{
-    /* margin-bottom: 10px; */
 
-  }
-  
-  
-  .review-item{
-    /* left: 50vw; */
-  }
-  .review-section span{
-    /* font-size: 10px;
-    color: #FF0000; */
-  }
   .star-part p{
     font-size: 13px;
   }
