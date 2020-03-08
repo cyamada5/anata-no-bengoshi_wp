@@ -21,6 +21,8 @@
         })(document);
       </script>
 
+
+
     <title>あなたの弁護士</title>
 </head>
 <body>
@@ -43,8 +45,8 @@
               <li class="main-nav_item"><a href="<?php echo esc_url(home_url()); ?>" class=""><img src="<?php echo get_template_directory_uri(); ?>/img/logo-notext.png" alt="TOPへ戻る"></i></a></li>
               <li class="main-nav_item"><a href="<?php echo esc_url(home_url()); ?>/review" class=""><i class="fas fa-pencil-alt fa-fw"></i><p>レビューする</p></a></li>
               <li class="main-nav_item"><a href="<?php echo esc_url(home_url()); ?>/search" class=""><i class="fas fa-search fa-fw"></i><p>ワードでさがす</p></a></li>
-              <li class="main-nav_item"><a href="#map-area-id" class=""><i class="fas fa-map-marked-alt fa-fw"></i><p>エリアからさがす</p></a></li>
-              <li class="main-nav_item"><a href="#category-area-id" class=""><i class="fas fa-folder-open fa-fw"></i><p>カテゴリからさがす</p></a></li>
+              <li class="main-nav_item"><a href="<?php echo esc_url(home_url()); ?>#map-area-id" class=""><i class="fas fa-map-marked-alt fa-fw"></i><p>エリアからさがす</p></a></li>
+              <li class="main-nav_item"><a href="<?php echo esc_url(home_url()); ?>#category-area-id" class=""><i class="fas fa-folder-open fa-fw"></i><p>カテゴリからさがす</p></a></li>
             </ul>
           </div>
         </nav>

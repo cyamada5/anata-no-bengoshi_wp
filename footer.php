@@ -28,7 +28,6 @@
 
 
 
-
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script src="<?php echo get_template_directory_uri(); ?>/js/function.js"></script>
 <script src="<?php echo get_template_directory_uri(); ?>/js/particles.min.js"></script>

@@ -21,7 +21,7 @@ particlesJS('hoge',{
           },
           //typeをimageにした時の設定
           "image": {
-            "src": "img/fukidashi.png",
+            "src": "http://anata-no-bengoshi.jp/anatanobengoshi/wp-content/themes/anata-no-bengoshi/img/fukidashi.png",
             "width": 100,
             "height": 63
           }

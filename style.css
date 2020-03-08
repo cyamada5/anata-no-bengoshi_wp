@@ -195,10 +195,7 @@ header i{
 
 }
 .main-visual{
-  /* margin-top: 8vh; */
   z-index: 1;
-  /* position: absolute; */
-  /* left: 31%; */
 }
 main div,
 main p{
@@ -206,7 +203,6 @@ main p{
 }
 main img{
   width: 75%;
-  /* margin-top: 1%; */
 }
 main p{
   margin-top: 25px;

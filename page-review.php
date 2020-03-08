@@ -166,7 +166,7 @@
                 </ul>
             </div>
 
-        <p><input type="submit" name="投稿" class="submit-btn"></p>
+        <p><input type="submit" name="投稿" value="投稿" class="submit-btn"></p>
     </form>
 
 </article>

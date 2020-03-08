@@ -1,3 +1,40 @@
+<?php
+
+// メッセージを保存するファイルのパス設定
+// define( 'FILENAME', './message.txt');
+
+if( !empty($_POST['投稿']) ) {
+	
+	if( $file_handle = fopen( FILENAME, "a") ) {
+
+;
+	
+		// 書き込むデータを作成
+        $data = "'".$_POST['投稿者名']."','".$_POST['依頼内容']."','".$_POST['弁護士の名前']."','".$_POST['prefecture']."','".$_POST['総合評価']."','".$_POST['クチコミのタイトル']."','".$_POST['詳細コメント']."','".$_POST['']."'\n";
+        
+
+        $post = array(
+            'post_title' => ".$_POST['投稿者名']."
+    
+            
+            
+		// 書き込み
+		fwrite( $file_handle, $data);
+	
+		// ファイルを閉じる
+		fclose( $file_handle);
+    }	
+
+    if (isset($_POST['投稿'])) {
+        //送信ボタンがクリックされた場合
+        echo "投稿ボタンがクリックされました。";
+      } else {
+        //送信ボタンがクリックされていない（ファイルを直接開いた）場合
+        echo "投稿ボタンはクリックされていません。";
+    }
+}
+?>
+
 <?php get_header(); ?>
 
 
@@ -15,7 +52,7 @@
 
 <?php if(have_posts()): while(have_posts()): the_post(); ?>
 
-        <!-- <div class="results-section">
+         <div class="results-section">
             <div class="reviewer">
                 <img src="<?php echo get_template_directory_uri(); ?>/img/人物/boy-2.png" alt="男性">
                 <h4 class="review-name">よっぴー</h4>
@@ -49,7 +86,7 @@
                 </div>
             </div>
 
-        </div> -->
+        </div> 
 
 <?php endwhile; endif; ?>
 
